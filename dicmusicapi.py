@@ -216,7 +216,7 @@ class DicmusicAPI:
         url = "https://dicmusic.club/upload.php?groupid=%s" % group['group']['id']
         response = self.session.get(url)
         result = response.text.replace('<select id="genre_tags" name="genre_tags" onchange="add_tag(); return false;" readonly>','<select id="genre_tags" name="genre_tags" onchange="add_tag(); return false;"> ')
-        forms = mechanize.ParseFile(StringIO(result.text.encode('utf-8')), url)
+        forms = mechanize.ParseFile(StringIO(result.encode('utf-8')), url)
         form = forms[-1]
         form.find_control('file_input').add_file(open(new_torrent), 'application/x-bittorrent', os.path.basename(new_torrent))
         #if torrent['remastered']:
