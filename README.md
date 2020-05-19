@@ -121,4 +121,4 @@ DICBetter 会缓存你已经成功转换的文件, 并且会转换跳过这些�
 
 ## Bugs 报告和新功能请求
 
-如果在使用中你发现了bug，或者想给程序新添加一些功能，请在[issues](https://github.com/MattRob1nson/REDBetter/issues)界面上报, *不过请确保你已经在Issues界面查找了没有相似错误存在*.
+如果在使用中你发现了bug，或者想给程序新添加一些功能，请在[issues](https://github.com/scatking/DICBetter/issues)界面上报, *不过请确保你已经在Issues界面查找了没有相似错误存在*.
